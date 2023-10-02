@@ -1,0 +1,27 @@
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    
+    public static int chocoCount(int a,int b){
+        if(b==0){
+            return a;
+        }
+        return chocoCount(b,a%b);
+    }
+	public static void main (String[] args) throws java.lang.Exception
+	{
+     Scanner sc=new Scanner(System.in);
+     int T=sc.nextInt();
+     while(T-->0){
+     int M=sc.nextInt();
+     int B=sc.nextInt();
+     int g=chocoCount(B,M);
+     System.out.println(2*g);
+     }
+     
+	}
+}
