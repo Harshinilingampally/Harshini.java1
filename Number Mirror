@@ -1,0 +1,25 @@
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+  class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt(),	int T=sc.nextInt();
+		String str=sc.next();
+		char [] S=str.toCharArray();
+		while(T--!=0){
+		    for(int i=0;i<N-1;i++){
+		        if(S[i]=='B' && S[i+1]=='G'){
+		            S[i]='G';
+		            S[i+1]='B';
+		            i++;
+		        }
+		    }
+		}
+		System.out.println(new String(S));
+	}
+}
